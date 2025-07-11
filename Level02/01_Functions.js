@@ -5,7 +5,7 @@ function addNums(num1, num2) {
 console.log(addNums(4,6))
 
 function login(username) {
-    return `Congratulation ${username}! You have successfuly logged in.`
+    return `Congratulation ${username}! You have successfully logged in.`
 }
 
 console.log(login()); // If you will not pass any argument, then undefined will print.
@@ -15,13 +15,13 @@ function signin(username) {
         console.log("Please enter your name");
         return
     }
-    return `Congratulation ${username}! You have successfuly signed in.`
+    return `Congratulation ${username}! You have successfully signed in.`
 }
 
 console.log(signin());
 
 function fillForm(username = "Muhammad Hussain") { // If you will not pass any argument, then Muhammad Hussain will printed as default value.
-    return `${username}! You have successfuly filled form.`
+    return `${username}! You have successfully filled form.`
 }
 
 console.log(login());
@@ -65,3 +65,26 @@ function checkFormStatus(passingArray = ["Muhammad Hussain", "filled form"]) { /
     return `${passingArray[0]} has ${passingArray[1]}.`
 }
 console.log(checkFormStatus());
+
+function firstName(fn) { // A function in which we passed a second function as a parameter is called first class function
+    console.log("Muhammad");
+    fn();
+}
+firstName(lastName);
+function lastName() {
+    console.log("Hussain");
+}
+
+// use function expression on the fly
+
+function first(fn) { 
+    console.log("Muhammad");
+    fn();
+}
+first(function () { // Passing whole function (not its variable name) inside other function's parameter is called function expression on the fly
+    console.log("Hussain");
+});
+
+const last = function () {
+    console.log("Hussain");
+}
