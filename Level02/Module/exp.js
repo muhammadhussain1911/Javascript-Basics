@@ -1,3 +1,5 @@
+// In JavaScript, a module is a self-contained unit of code designed to organize and structure applications by breaking them down into smaller, manageable, and reusable pieces.
+
 export function addition(a, b) {
   return a + b;
 }
