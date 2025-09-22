@@ -86,6 +86,7 @@ console.log(typeof convertedBool); // boolean
 // null => false
 // undefined => false
 // true => true , false => false
+// "" => false
 
 // Oftenly browser gives us data in string form, then we have to convert it into number or boolean.
 
