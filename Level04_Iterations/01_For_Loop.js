@@ -66,3 +66,15 @@ function multipleOfNumber1(number) {
     console.log(arr); 
 }
 multipleOfNumber(3);
+
+// <============Connect with HTML to view Math Tables on screen============>
+
+for (let table = 2; table <= 20; table++) {
+  document.writeln(`<h1>Table of ${table}</h1>`);
+  for (let multiplier = 1; multiplier <= 10; multiplier++) {
+    document.writeln(
+      `<h4>${table} x ${multiplier} = ${table * multiplier}</h4>`,
+    );
+  }
+  document.writeln(`<hr>`);
+}
