@@ -1,4 +1,33 @@
 const myName = new String("Muhammad Hussain");
+
+// <============Connect with html to view String Methods on screen============>
+
+document.writeln(myName);
+document.writeln(`<hr>`);
+document.writeln(myName.toUpperCase()); // Convert string to upper case
+document.writeln(`<hr>`);
+document.writeln(myName.toLowerCase()); // Convert string to lower case
+document.writeln(`<hr>`);
+document.writeln(myName.length); // Return length of string myName
+document.writeln(`<hr>`);
+document.writeln(myName[3]); // Return 4th character of string myName
+document.writeln(`<hr>`);
+document.writeln(myName.indexOf("H")); // Return index of character H
+document.writeln(`<hr>`);
+document.writeln(myName.charAt(2)); // Return character in string at index 2
+document.writeln(`<hr>`);
+document.writeln(myName.indexOf("u")); // Return index of character u
+document.writeln(`<hr>`);
+document.writeln(myName.split(""));
+document.writeln(`<hr>`);
+document.writeln(myName.split(" "));
+const myFunction = function () {
+  return myName.indexOf("u");
+};
+console.log(myFunction());
+
+// <================================>
+
 console.log(myName.__proto__); // old way and not recommended
 console.log(Object.getPrototypeOf(myName)); // modern way
 console.log(myName);
