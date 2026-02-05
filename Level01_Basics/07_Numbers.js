@@ -24,4 +24,25 @@ console.log(num1.toPrecision(4)); // "12.35"
 const dummyNum = 1125.567
 console.log(dummyNum.toPrecision(3));
 
-// By writing Number. in console of browser, e can access many methods of numbers.
+// <============Connect with HTML file to view result on screen============>
+let myNumber1 = 1000000;
+
+document.writeln(myNumber1);
+document.writeln(`<hr>`);
+document.writeln(myNumber1.toString()); // Convert number to string
+document.writeln(`<hr>`);
+document.writeln(myNumber1.toExponential()); // Convert number to exponential
+document.writeln(`<hr>`);
+document.writeln(myNumber1.toFixed(2)); // Fixed number to 2 after decimal point, and return fixed number.
+document.writeln(`<hr>`);
+document.writeln(myNumber1.toLocaleString("en-IN"));
+document.writeln(`<hr>`);
+document.writeln(myNumber1.toLocaleString("ar-DJ"));
+
+const myFunction = function () {
+  return myNumber1.toFixed(2);
+};
+console.log(myFunction());
+
+
+// By writing Number in console of browser, we can access many methods of numbers.
