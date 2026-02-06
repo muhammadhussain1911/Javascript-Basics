@@ -58,3 +58,9 @@ console.log(arrowWithParantheses(4,6));
 
 const returnObjInArrow = () => ({name: "Muhammad Hussain"}) // for returning object, parentheses is compulsory.
 console.log(returnObjInArrow());
+
+
+// "this" refer to empty object in node environment and window object in browser.
+// this refer to empty object inside arrow function in node environment and window object in browser.
+// "this" refer to current context of object in both browser and node environment.
+// this refer to global context inside simple function, function expression not context of function itself in both browser and node environment.
